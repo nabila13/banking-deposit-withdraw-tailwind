@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money transaction</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="font-bold text-center text-3xl mt-8 text-green-600"> Yahoo!! personal bank e dhukte parsi!!!</h1>
+    </header>
+    <main class="mx-auto w-4/5">
+        <section class="grid grid-cols-3 w-5/6 mt-8 mx-auto">
+            <div class="rounded-md px-8 py-6 mx-auto w-5/6 bg-green-200">
+                <h3 class="font-semibold text-2xl">Deposit</h3>
+                <h1 class="font-bold text-4xl">$<span id="amount">00</span></h1>
+            </div>
+            <div class="rounded-md px-8 w-5/6 py-6 bg-yellow-200 mx-auto">
+                <h3 class="font-semibold text-2xl">Withdraw</h3>
+                <h1 class="font-bold text-4xl">$<span id="amount2">00</span></h1>
+            </div>
+            <div class="rounded-md bg-red-200 w-5/6 px-8 py-6 mx-auto">
+                <h3 class="font-semibold text-2xl">total balance</h3>
+                <h1 class="font-bold text-4xl">$<span id="amount3">00</span></h1>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 w-5/6 mx-auto mt-8">
+            <div class="bg-blue-200 mx-auto px-20 py-16 mb-10 block rounded-md">
+                <input type="text" id="deposit" name="input" class="px-10 rounded-md block py-2 mb-4" placeholder="Enter deposit amount" id="deposit">
+                <button id="submit-deposit" class="block px-4 py-2 bg-red-500 rounded-md">Submit</button>
+
+            </div>
+            <div class="bg-gray-200 mx-auto px-20 py-16 mb-10 rounded-md">
+                <input type="text" id="withdraw" class="px-10 rounded-md block py-2 mb-4" name="input" id="withdraw" placeholder="Enter Withdraw amount">
+                <button id="submit-withdraw" class="block px-4 py-2 bg-red-500 rounded-md">Submit</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
